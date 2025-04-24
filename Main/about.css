@@ -1,0 +1,113 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+.breadcrumb {
+    font-size: 24px;
+    color: #888;
+    text-align: left;
+}
+
+.breadcrumb a {
+    color: #b80f39;
+    text-decoration: none;
+}
+
+.breadcrumb span {
+    color: #333;
+}
+/* About Section */
+.about
+{
+    padding: auto;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+}
+.about-us 
+{
+    text-align: center;
+    padding: 50px;
+    font-size:20px;
+} 
+.about-us p{
+    font-weight: bold;
+    justify-content: center;
+    text-decoration: none;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+.image-container {
+    flex:  1;
+    text-align: center;
+}
+.image-container img {
+    /* max-width: 100%; */
+    /* height: auto; */
+    border-radius: 10px;
+}
+.text-container {
+    flex: 2;
+    padding: 20px;
+}
+.text-container p {
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+/*Align Image & Text in One Row*/
+.philosophy-section {
+    display: flex;
+    align-items: center;  /*Vertically align content  */
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+/* Text Container */
+.text-container {
+    max-width: 500px;
+    align-items: center;
+    padding-right: 40px;/* Space between text & image */
+}
+
+.text-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+     color: #350221;
+     line-height: 2.5;
+}
+
+.text-container p {
+    font-size: 16px;
+    line-height:1.5;
+    color: #333;
+}
+
+/* Image Styling */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive: Stack for Mobile */
+/* @media (max-width: 768px) {
+    .philosophy-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-container {
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+} */

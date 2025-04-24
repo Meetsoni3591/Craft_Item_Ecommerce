@@ -1,0 +1,150 @@
+* {
+    font-family: 'Poppins', san serif;
+
+}
+
+body {
+    background-image: url("./Images/loginformbackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    margin: auto;
+    width: 450px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15 px;
+    background: rgb(90, 47, 6);
+    color: #ed7a9e;
+
+}
+
+.top-header {
+    width: 100%;
+    height: 100;
+    padding: 20px;
+    background-color: rgb(238, 235, 231);
+    /*login form background*/
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+}
+
+header {
+    color: rgb(122, 49, 4);
+    /*login text color*/
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+
+
+
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    height: 45px;
+    width: 87;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: rgb(4, 4, 4);
+    padding: 0 0 0 45px;
+    background: rgba(185, 145, 145, 0.833);
+
+}
+
+i {
+    position: relative;
+    top: -31px;
+    left: 17px;
+    color: #b06383;
+    /*icon color*/
+}
+
+::-webkit-input-placeholder {
+    color: #74083c;
+    /*username,pass...*/
+}
+
+
+.submit {
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    background: rgb(133, 112, 100);
+    /*log   in button backgro...*/
+    cursor: pointer;
+    transition: .3s;
+}
+
+.submit:hover {
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
+    color: #d370a2;
+    /*remember me color*/
+    margin-top: 15px;
+
+}
+
+.left {
+    display: flex;
+}
+
+label a {
+    color: #d370a2;
+    text-decoration: none;
+
+}
+
+.register-link {
+    color: #f0e0e8;
+    text-decoration: none;
+    font-size: small;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.register-link p {
+    margin-top: 15px;
+    color: #d370a2;
+    /*do not have acc color*/
+    text-decoration: none;
+    font-size: small;
+    justify-content: space-between;
+}
+
+.register-link a {
+    color: rgb(39, 8, 90);
+    /*register color*/
+    font-size: small;
+}
+
+.register-link a:hover {
+    box-shadow: 1px 5px 7px 1px rgba(245, 8, 198, 0.2);
+}

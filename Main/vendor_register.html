@@ -1,0 +1,121 @@
+<html>
+<head>
+    <title>Event Registration Form</title>
+    
+</head>
+<style>
+            body {
+            display: flex;
+            background-image: url("./Images/loginformbackground.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            flex: 1;
+            color: #774936;
+
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #774936;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+
+            border: 1px solid #954141;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .container h2 {
+            background: rgb(131, 86, 58);
+            color: white;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+            margin: -20px -20px 20px -20px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+            color: #774936;
+        }
+
+
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: rgb(158, 82, 35);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background: rgb(238, 138, 76);
+        }
+</style>
+<body>
+<div class="container">
+    <h2> VENDOR REGISTRATION FORM</h2>
+        <form method="POST" action="vendor_register.php">
+            <div class="input-group">
+                <label for="first">Full Name</label>
+                <input type="text" id="first" name="first" placeholder="First name "
+                         title="Please enter valid first-name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password"name="password" id="password" class="input" placeholder="password" title="Enter valid password" 
+                    required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" title="Enter valid Email"
+                     required>
+            </div>
+
+            <div class="input-group">
+                <label for="phone">contact</label>
+                <input type="number" id="contact" name="contact" placeholder="Phone Number" title="Enter valid phone number"
+                    required>
+                <small>Enter a 10-digit phone number</small>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn">REGISTER</button>
+            </div>
+            
+        </form>
+</div>
+</body>
+
+</html>

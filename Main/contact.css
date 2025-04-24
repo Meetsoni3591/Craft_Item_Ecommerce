@@ -1,0 +1,270 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.header
+{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:5px ;
+    background-color:#eabbd1;
+    text-align: center;
+}
+.top-bar 
+{
+     background-color:#560e30; /*..first sign up */
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #f5f8f8;
+	font-weight: bold;
+	font-style: normal;
+}
+.header ul, .header li {
+	margin: 0;
+	padding: 0;
+    list-style: none;
+}
+/* .header ul {
+	background: rgb(64, 60, 60);
+	list-style: none;
+	width: 0%;
+} */
+.header li {
+	float: left;
+	position: relative;
+	/* width:auto; */
+}
+.header a {
+    
+	color:#560e30;
+	display: block;
+	font: bold 15px sans-serif;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.header li:hover a {
+    background-color:#f3d9e5;
+    /* header crafts background color */
+}
+
+
+#submenu {
+    left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 35px;
+	visibility: hidden;
+	z-index: 1;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top: 40px;	/* adjust this as per top nav padding top & bottom comes */
+	visibility: visible;
+}
+#submenu li {
+    float: none;
+	width: 100%;
+}
+#submenu a:hover {
+    
+    background-color:#dd88b0;/*drop down hover*/
+}
+#submenu a {
+    
+   background-color:#f3d9e5;/*drop down background*/
+}
+
+.icon i
+{
+    padding: 7px;
+    margin: 1px;
+}
+/* Container Layout */
+.inquiry-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Form Styling */
+.form-container {
+    flex: 1;
+    padding-right: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin: 10px 0 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* File Input */
+.file-types {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Submit Button */
+button {
+    background-color: #5c1e27;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #47171d;
+}
+
+/* Contact Info Section */
+.contact-info {
+    flex: 0.5;
+    padding-left: 40px;
+    border-left: 1px solid #ccc;
+}
+
+.contact-info p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #9d1b32;
+    font-weight: bold;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .inquiry-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .form-container, .contact-info {
+        flex: 1;
+        padding: 0;
+        border-left: none;
+    }
+
+    .contact-info {
+        margin-top: 10px;
+    }
+}
+
+footer {
+    background-color: #6c243c;
+    color: white;
+    padding:10px 10px;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    width: 18%;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.contact a {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.socialMedia a{
+    width: 50px;
+    height: 50px;
+    text-decoration:none;
+    text-align:right;
+    margin-right: 15px;
+    border-radius: 5px;
+    transition: 0.4s;
+    padding: 2px;
+}
+.socialMedia a i{
+    color: #ddd;
+    font-size: 25px;
+    line-height: 35px;
+    border:1px solid transparent;
+    transition-delay: 0.4s;
+}
+.socialMedia a:hover i{
+    color: rgb(203, 128, 170);
+}
+p{
+    text-align: center;
+}

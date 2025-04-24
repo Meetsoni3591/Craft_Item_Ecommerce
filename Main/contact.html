@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquiry Form</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="top-bar">
+        <div class="offer">Sign up & get 10% Off on your first purchase</div>
+      </div>
+      <section class="header">
+        <a href="/ProjectCraft/Main/homepage.php"><img src="logo.png" width="100"></a>
+        <li><a href="#">CRAFT</a>
+          <ul id="submenu">
+            <li><a href="/ProjectCraft/Main/Crafts/Ajrakh.php">Ajrakh</a></li>
+            <li><a href="/ProjectCraft/Main/Crafts/Beaded Jewellery.php">Beaded Jewellery</a></li>
+            <li><a href="/projectCraft/Main/Crafts/Glass art.php">Glass Art</a></li>
+            <li><a href="/projectCraft/Main/Crafts/marble art.php">Marble Art</a></li>
+            <li><a href="/projectCraft/Main/Crafts/jali work.php">Jali Work on Wood</a></li>
+          </ul>
+        </li>
+        <li><a href="#">HOME DECOR</a>
+          <ul id="submenu">
+            <li><a href="/ProjectCraft/Main/Homedecor/bedding_cussion.php">Bedding & Cushions</a></li>
+            <li><a href="/ProjectCraft/Main/Homedecor/carpet_rugs.php">Carpets and Rugs</a></li>
+            <li><a href="/ProjectCraft/Main/Homedecor/dinning.php">Dining</a></li>
+            <li><a href="/ProjectCraft/Main/Homedecor/decor.php">Decor</a></li>
+            
+          </ul>
+        </li>
+        <li><a href="#">JEWELLARY</a>
+          <ul id="submenu">
+            <li><a href="/ProjectCraft/Main/Jewellery/Earings.php">Earings</a></li>
+            <li><a href="/ProjectCraft/Main/Jewellery/Bangles.php">Bangles</a></li>
+            <li><a href="/ProjectCraft/Main/Jewellery/Necklace.php">Necklace</a></li>
+            <li><a href="/ProjectCraft/Main/Jewellery/Rings.php">Rings</a></li>
+            <li><a href="/ProjectCraft/Main/Jewellery/Sets.php">Sets</a></li>
+            <li><a href="/ProjectCraft/Main/Jewellery/Pandants.php">Pendants</a></li>
+          </ul>
+        </li>
+        <li><a href="#">ACCESSORIES</a>
+          <ul id="submenu">
+            <li><a href="/ProjectCraft/Main/Accessories/Hair.php">Hair</a></li>
+            <li><a href="/ProjectCraft/Main/Accessories/Stationery.php">Stationery</a></li>
+            <li><a href="/ProjectCraft/Main/Accessories/Rakhis.php">Rakhis</a></li>
+            <li><a href="/ProjectCraft/Main/Accessories/Shawls and Wraps.php">Shawls and Wraps</a></li>
+            <li><a href="/ProjectCraft/Main/Accessories/Bags.php">Bags</a></li>
+            <li><a href="/ProjectCraft/Main/Accessories/Bath.php">Bath</a></li>
+          </ul>
+        </li>
+        <li><a href="">WALL DECOR</a>
+          <ul id="submenu">
+            <li><a href="/ProjectCraft/Main/Wall Decor/Wall Accent.php">Wall Accents</a></li>
+            <li><a href="/ProjectCraft/Main/Wall Decor/Wall art.php">Wall art</a></li>
+          </ul>
+        </li>
+        <li><a href="">GIFTING</a>
+          <ul id="submenu">
+            <li><a href="/ProjectCraft/Main/Gifting/wedding_gift.php">Wedding Gift</a></li>
+            <li><a href="/ProjectCraft/Main/Gifting/wellness_gift.php">Wellness Gifting</a></li>
+          </ul>
+        </li>
+        <li><a href="/ProjectCraft/Main/contact.html">CONTACT US</a></li>
+        <li><a href="/ProjectCraft/Main/about.php">ABOUT US</a></li>
+    
+        <div class="icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping"><a href="/ProjectCraft/Main/cart.php"></a></i>
+          <i class="fa-solid fa-user"><a href="/ProjectCraft/Main/login.html"></a></i>
+        </div>
+      </section>
+    <section class="inquiry-container">
+        <!-- Left Side - Form -->
+        <div class="form-container">
+            <h2>Inquiry Form</h2>
+            <form action="contact.php" method="POST" enctype="multipart/form-data">
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- <label for="department">Department</label>
+                <select id="department" name="department">
+                    <option selected>Corporate Gifting</option>
+                    <option>Customer Support</option>
+                    <option>Partnerships</option>
+                </select> -->
+
+                <label for="description">Description *</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <!-- <label for="attachment">Attachment</label>
+                <input type="file" id="attachment" name="attachment" accept=".jpg, .png, .gif">
+                <p class="file-types">Allowed File Types (jpg, png, gif)</p> -->
+
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+
+        <!-- Right Side - Contact Info -->
+        <div class="contact-info">
+            <h2>Contact Info</h2>
+            <p><strong>Phone -</strong> <span class="phone-number">+91-9924818234</span></p>
+            <p><strong>Email -</strong> <a href="Fernwehtechnologies@gmail.com">Fernwehtechnologies@gmail.comom</a></p>
+            <p><strong>Address -</strong> 321,3rd Floor,Super Mall Nr. Lal Bungalow , C.G.Road,Navrangpura , Ahmedabad - 38000</p>
+        </div>
+    </section>
+    
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Crafts</a></li>
+                <li><a href="#">Home-decor</a></li>
+                <li><a href="#">Jewellery</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Wall Decor</a></li>
+            </ul>
+        </div>
+
+
+        <div class="footer-section">
+            <h3>Customer Service</h3>
+            <ul>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">Shipping & Payments</a></li>
+                <li><a href="#">Return & Exchanges</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookies Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Craft Maestros</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Maestros</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>321,3rd Floor,Super Mall Nr. Lal Bungalow , C.G.Road, Navrangpura , Ahmedabad - 380009</p>
+            <p>+91-9924818234</p>
+            <p><a href="Fernwehtechnologies@gmail.com">Fernwehtechnologies@gmail.com</a></p>
+            <div class="socialMedia">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    <p>© 2021 Craft Maestros. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="admin_login.css">
+    <link rel="stylesheet" href="box">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+    <div class="box">
+        <div clss="container">
+            <div class="top-header">
+                <header>ADMIN LOGIN FORM</header>
+                <form method="POST" action="admin_login.php"> 
+
+                    <div class="input-field">
+                        <input type="email" class="input" name="email" placeholder="Email" required>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="name" class="input" name="name" placeholder="Name" required>
+                        <i class="fa-solid fa-address-card"></i>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" class="input" name="Password" placeholder="Password" required>
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+
+                    <div class="input-field">
+                        <button type="submit" class="submit">Login</button>
+                    </div>
+
+                    <div class="bottom">
+                        <div class="left">
+                            <input type="checkbox" id="check">
+                            <lebel for="check"> Remember me</lebel>
+                        </div>
+                        <div class="right">
+                            <label>
+                                <a href="#"> Forgot password</a></label>
+                        </div>
+                    </div>
+
+                    <div class="register-link">
+                        <p>Don't have an account ?<a href="admin_registration.html">Register</a></p>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

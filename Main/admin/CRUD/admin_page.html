@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin page</title> 
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="admin_page.css">
+</head>
+<body>
+    <div class="container">
+        <div class="admin-produc-form-container">
+            <form method="POST" action="admin_page.php" enctype="multipart/form-data">
+                <h3>ADD NEW PRODUCT</h3>
+                <input type="text" placeholder="Enter Product Name" name="product_name" class="box">
+                <input type="number" placeholder="Enter Product Price" name="product_price" class="box">
+                <input type="file" accept="" name="product_image" class="box">
+                <button type="submit" class="btn" name="add_product" value="submit">Add A Product</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

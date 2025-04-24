@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>Event Registration Form</title>
+    <link rel="stylesheet" href="registartion.css">
+</head>
+
+<body>
+<div class="container">
+    <h2> REGISTRATION FORM</h2>
+        <form method="POST" action="registartion.php">
+            <div class="input-group">
+                <label for="first">First name</label>
+                <input type="text" id="first" name="first" placeholder="First name "
+                         title="Please enter valid first-name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="last">Last name</label>
+                <input type="text" id="last" name="last" placeholder="Last name"
+                        title="Please enter valid last-name" required>
+             </div>
+          
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password"name="password" id="password" class="input" placeholder="password" title="Enter valid password" 
+                    required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" title="Enter valid Email"
+                     required>
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Phone</label>
+                <input type="number" id="phone" name="phone" placeholder="Phone Number" title="Enter valid phone number"
+                    required>
+                <small>Enter a 10-digit phone number</small>
+            </div>
+
+            <div class="input-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="3" cols="50" placeholder="Enter your address"
+                    required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn">REGISTER</button>
+            </div>
+            
+        </form>
+</div>
+</body>
+
+</html>
