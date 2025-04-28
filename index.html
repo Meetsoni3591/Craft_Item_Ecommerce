@@ -8,6 +8,10 @@
 <body>
     <h1>Welcome to My Web Page</h1>
     <p>This is a simple HTML document.</p>
-    <script src="script.js"></script>
+    <script>
+        if (window.location.pathname.endsWith('index.html')) {
+            window.location.replace('index.php');
+        }
+    </script>
 </body>
 </html>
