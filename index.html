@@ -1,246 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Forget with touch !</title>
-  <link rel="stylesheet" href="homepage.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
-</head>
-
-<body>
-  <div class="top-bar">
-    <div class="offer">Sign up & get 10% Off on your first purchase</div>
-  </div>
-  <section class="header">
-    <a href="homepage.html"><img src="./Images/logo.png" width="100"></a>
-    <li><a href="#">CRAFT</a>
-      <ul id="submenu">
-        <li><a href="/ProjectCraft/Main/Crafts/Ajrakh.php">Ajrakh</a></li>
-        <li><a href="/ProjectCraft/Main/Crafts/Beaded Jewellery.php">Beaded Jewellery</a></li>
-        <li><a href="/projectCraft/Main/Crafts/Glass art.php">Glass Art</a></li>
-        <li><a href="/projectCraft/Main/Crafts/Marble art.php">Marble Art</a></li>
-        <li><a href="/projectCraft/Main/Crafts/Jali work.php">Jali Work on Wood</a></li>
-      </ul>
-    </li>
-    <li><a href="#">HOME DECOR</a>
-      <ul id="submenu">
-        <li><a href="/ProjectCraft/Main/Homedecor/bedding_cussion.php">Bedding & Cushions</a></li>
-        <li><a href="/ProjectCraft/Main/Homedecor/carpet_rugs.php">Carpets and Rugs</a></li>
-        <li><a href="/ProjectCraft/Main/Homedecor/dinning.php">Dining</a></li>
-        <li><a href="/ProjectCraft/Main/Homedecor/decor.php">Decor</a></li>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forged with Touch!</title>
+    
+    <style>
+        .slideshow {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+        .slideshow img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            animation: fade 25s infinite;
+        }
+        .slideshow img:nth-child(1) { animation-delay: 0s; }
+        .slideshow img:nth-child(2) { animation-delay: 5s; }
+        .slideshow img:nth-child(3) { animation-delay: 10s; }
+        .slideshow img:nth-child(4) { animation-delay: 15s; }
+        .slideshow img:nth-child(5) { animation-delay: 20s; }
         
-      </ul>
-    </li>
-    <li><a href="#">JEWELLARY</a>
-      <ul id="submenu">
-        <li><a href="/ProjectCraft/Main/Jewellery/Earings.php">Earings</a></li>
-        <li><a href="/ProjectCraft/Main/Jewellery/Bangles.php">Bangles</a></li>
-        <li><a href="/ProjectCraft/Main/Jewellery/Necklace.php">Necklace</a></li>
-        <li><a href="/ProjectCraft/Main/Jewellery/Rings.php">Rings</a></li>
-        <li><a href="/ProjectCraft/Main/Jewellery/Sets.php">Sets</a></li>
-        <li><a href="/ProjectCraft/Main/Jewellery/Pandants.php">Pendants</a></li>
-      </ul>
-    </li>
-    <li><a href="#">ACCESSORIES</a>
-      <ul id="submenu">
-        <li><a href="/ProjectCraft/Main/Accessories/Hair.php">Hair</a></li>
-        <li><a href="/ProjectCraft/Main/Accessories/Stationery.php">Stationery</a></li>
-        <li><a href="/ProjectCraft/Main/Accessories/Rakhis.php">Rakhis</a></li>
-        <li><a href="/ProjectCraft/Main/Accessories/Shawls and Wraps.php">Shawls and Wraps</a></li>
-        <li><a href="/ProjectCraft/Main/Accessories/Bags.php">Bags</a></li>
-        <li><a href="/ProjectCraft/Main/Accessories/Bath.php">Bath</a></li>
-      </ul>
-    </li>
-    <li><a href="">WALL DECOR</a>
-      <ul id="submenu">
-        <li><a href="/ProjectCraft/Main/Wall Decor/Wall Accent.php">Wall Accents</a></li>
-        <li><a href="/ProjectCraft/Main/Wall Decor/Wall art.php">Wall art</a></li>
-      </ul>
-    </li>
-    <!-- <li><a href="">GIFTING</a></li> -->
-    <li><a href="contact.html">CONTACT US</a></li>
-    <li><a href="about.PHP">ABOUT US</a></li>
+        @keyframes fade {
+            0% { opacity: 0; }
+            10% { opacity: 1; }
+            20% { opacity: 1; }
+            30% { opacity: 0; }
+            100% { opacity: 0; }
+        }
 
-    <div class="icon">
-      <i class="fa-solid fa-magnifying-glass"></i>
-      <i class="fa-solid fa-cart-shopping"></i>
-      <i class="fa-solid fa-user"><a href="login.html"></a></i>
-    </div>
+        .products {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+            color: #752d42;
+            margin: 2%;
+            font-size: 90%;
+        }
+        .product-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product-item {
+            margin: 10px;
+            text-align: center;
+        }
+        .rupee {
+            font-size: 14px;
+            font-weight: bold;
+            color: #000;
+        }
+        .product-item img {
+            width: 300px;
+            height: 350px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .product-item h3 {
+            margin-top: 10px;
+            font-size: 80%;
+        }
+        .product-item p {
+            font-size: 1em;
+            color: #090808;
+        }
+        .add-to-cart, .wishlist-btn {
+            background-color: #752d42;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 5px;
+        }
+        .add-to-cart:hover, .wishlist-btn:hover {
+            background-color: #5a1f31;
+        }
+    </style>
+</head>
+ <!-- add to cart script  -->
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const cartButtons = document.querySelectorAll(".add-to-cart");
 
-  </section>
-  <div class="slideshow">
-    <img src="./Images/main.jpg" alt="Forget with magics touch">
-    <img src="./Images/elephant.png" alt="Forget with magics touch">
-    <img src="./Images/glass-art.jpg" alt="Forget with magics touch">
-    <img src="./Images/gift.jpg" alt="Forget with magics touch">
-    <img src="./Images/main.jpg" alt="Forget with magics touch">
-  </div>
+    cartButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            let productID = this.getAttribute("data-id"); // Unique ID
+            let productName = this.getAttribute("data-name");
+            let productPrice = parseFloat(this.getAttribute("data-price"));
+            let productImage = this.getAttribute("data-image");
 
-  <section class="products">
-    <h2>Handpicked Creations</h2>
-    <div class="product-grid">
-      <div class="product-item">
-        <a href="1st578.html"> <img src="./Images/2.jpeg" alt="Beaded Necklace"></a>
-       
-        <h3>Beaded Necklace</h3>
-        <p><span class="rupee">&#8377;</span>578</p>
-      </div>
-      <div class="product-item">
-        <a href=""> <img src="./Images/1.jpeg" alt="Beaded Bracelet"></a>
-        <h3>Beaded Bracelet</h3>
-        <p> <span class="rupee">&#8377;</span>630</p>
-      </div>
-      <div class="product-item">
-        <a href=""> <img src="./Images/3.jpeg" alt="Beaded Earrings"></a>
-        <h3>Beaded Earrings</h3>
-        <p> <span class="rupee">&#8377;</span>350</p>
-        <button class="cart-btn">Add to Cart</button>
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-      </div>
-      <div class="product-item">
-        <a href=""><img src="./Images/5.jpeg" alt="Beaded Earrings"></a>
-        <h3>Bhadra Rabari Earrings</h3>
-        <p> <span class="rupee">&#8377;</span>410</p>
-        <button class="cart-btn">Add to Cart</button>
+            // Check if product with the same ID exists
+            let existingProduct = cart.find(item => item.id === productID);
 
-      </div>
-      <div class="product-item">
-        <img src="./Images/7.jpeg" alt="Beaded Earrings">
-        <h3>Varnin Rabari Earrings</h3>
-        <p> <span class="rupee">&#8377;</span>410</p>
-        <button class="cart-btn">Add to Cart</button>
+            if (existingProduct) {
+                existingProduct.quantity += 1; // Increase quantity
+            } else {
+                cart.push({
+                    id: productID,
+                    name: productName,
+                    price: productPrice,
+                    quantity: 1,
+                    image: productImage
+                });
+            }
 
-      </div>
-      <div class="product-item">
-        <img src="./Images/img_0578.jpg" alt="Beaded Earrings">
-        <h3> Peelo Dangling Earrings</h3>
-        <p> <span class="rupee">&#8377;</span>323</p>
-        <button class="cart-btn">Add to Cart</button>
+            localStorage.setItem("cart", JSON.stringify(cart));
 
-      </div>
-      <div class="product-item">
-        <img src="./Images/img_0585.jpg" alt="Beaded Earrings">
-        <h3>Beaded Earrings</h3>
-        <p> <span class="rupee">&#8377;</span>352</p>
-        <button class="cart-btn">Add to Cart</button>
+            // Show success alert
+            alert(`${productName} has been added to your cart! 🛒`);
+        });
+    });
+});
 
-      </div>
-      <div class="product-item">
-        <img src="./Images/img_0586.jpg" alt="Beaded Earrings">
-        <h3>Darzata Earrings</h3>
-        <p> <span class="rupee">&#8377;</span>322</p>
-        <button class="cart-btn">Add to Cart</button>
+</script>
+<body>
 
-      </div>
-      <div class="product-item">
-        <img src="./Images/img_0571.jpg" alt="Beaded Earrings">
-        <h3>Harin Beaded Necklace</h3>
-        <p> <span class="rupee">&#8377;</span>610</p>
-        <button class="cart-btn">Add to Cart</button>
+<div class="slideshow">
+    <img src="./Images/main.jpg" alt="Forged with Magic's Touch">
+    <img src="./Images/elephant.png" alt="Forged with Magic's Touch">
+    <img src="./Images/glass-art.jpg" alt="Forged with Magic's Touch">
+    <img src="./Images/gift.jpg" alt="Forged with Magic's Touch">
+    <img src="./Images/main.jpg" alt="Forged with Magic's Touch">
+</div>
 
-      </div>
-      <div class="product-item">
-        <img src="./Images/img_0559.jpg" alt="Beaded Earrings">
-        <h3>Revat Beaded Necklace</h3>
-        <p> <span class="rupee">&#8377;</span>578</p>
-        <button class="cart-btn">Add to Cart</button>
 
-      </div>
-      <div class="product-item">
-        <img src="./Images/img_0605.jpg" alt="Beaded Earrings">
-        <h3>Panchmahal Earrings</h3>
-        <p> <span class="rupee">&#8377;</span>410</p>
-        <button class="cart-btn">Add to Cart</button>
 
-      </div>
-      
-    </section>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const wishlistButtons = document.querySelectorAll(".wishlist-btn");
+    let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
 
-    <section class="categories-section">
-      <h2>Our Most Loved Categories</h2>
-      <div class="categories">
-        <div class="category">
-          <img src="./Images/Shwals-Wraps..jpg" alt="Shawls & Wraps">
-          <p>Shawls & Wraps</p>
-        </div>
-        <div class="category">
-          <img src="./Images/Jewellery.jpg" alt="Jewellery">
-          <p>Jewellery</p>
-        </div>
-        <div class="category">
-          <img src="./Images/Apparel.jpg" alt="Apparels">
-          <p>Apparels</p>
-        </div>
-        <div class="category">
-          <img src="./Images/Home_Decor.jpg" alt="Home Decor">
-          <p>Home Decor</p>
-        </div>
-      </div>
-  
-      <button class="view-all">VIEW ALL</button>
-    </section>
+    function updateWishlistCount() {
+        document.getElementById("wishlist-count").innerText = wishlist.length;
+    }
+    updateWishlistCount();
 
-    <footer>
-      <div class="footer-container">
-          <div class="footer-section">
-              <h3>Quick Links</h3>
-              <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Crafts</a></li>
-                  <li><a href="#">Home-decor</a></li>
-                  <li><a href="#">Jewellery</a></li>
-                  <li><a href="#">Accessories</a></li>
-                  <li><a href="#">Wall Decor</a></li>
-              </ul>
-          </div>
-  
-  
-          <div class="footer-section">
-              <h3>Customer Service</h3>
-              <ul>
-                  <li><a href="#">Track Order</a></li>
-                  <li><a href="#">Shipping & Payments</a></li>
-                  <li><a href="#">Return & Exchanges</a></li>
-                  <li><a href="#">Terms of Use</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Cookies Policy</a></li>
-              </ul>
-          </div>
-  
-          <div class="footer-section">
-              <h3>Craft Maestros</h3>
-              <ul>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Our Maestros</a></li>
-                  <li><a href="#">Contact Us</a></li>
-              </ul>
-          </div>
-  
-          <div class="footer-section contact">
-              <h3>Contact Us</h3>
-              <p>321,3rd Floor,Super Mall Nr. Lal Bungalow , C.G.Road, Navrangpura , Ahmedabad - 380009</p>
-              <p>+91-9924818234</p>
-              <p><a href="Fernwehtechnologies@gmail.com">Fernwehtechnologies@gmail.com</a></p>
-              <div class="socialMedia">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              </div>
-          </div>
-      </div>
-  
-  
-  
-      <p>© 2021 Craft Maestros. All Rights Reserved.</p>
-  
-  
-      </div>
-  </footer>
+    wishlistButtons.forEach(button => {
+        let productID = button.getAttribute("data-id");
+
+        if (wishlist.some(item => item.id === productID)) {
+            button.textContent = "✅ In Wishlist";
+        }
+
+        button.addEventListener("click", function () {
+            let productID = this.getAttribute("data-id"); 
+            let productName = this.getAttribute("data-name");
+            let productPrice = parseFloat(this.getAttribute("data-price"));
+            let productImage = this.getAttribute("data-image");
+
+            let existingProduct = wishlist.find(item => item.id === productID);
+
+            if (existingProduct) {
+                wishlist = wishlist.filter(item => item.id !== productID);
+                alert(`${productName} removed from wishlist ❌`);
+                this.textContent = "❤️ Add to Wishlist";
+            } else {
+                wishlist.push({
+                    id: productID,
+                    name: productName,
+                    price: productPrice,
+                    image: productImage
+                });
+                alert(`${productName} added to wishlist ❤️`);
+                this.textContent = "✅ In Wishlist";
+            }
+
+            localStorage.setItem("wishlist", JSON.stringify(wishlist));
+            updateWishlistCount();
+        });
+    });
+});
+</script>
+
 </body>
 </html>
